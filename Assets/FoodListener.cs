@@ -13,19 +13,20 @@ public class Food {
 		this._ingredients = ingredients;
 	}
 
-	public Food CREATE_BEEF_FOOD() {
+	public Food CreateBeefFood() {
 		string[] beef_ingredients = {"beef", "potatos", "sauce"};
 		return new Food("Beef", beef_ingredients);
 	}
 
-	public Food CREATE_SOUP_FOOD() {
+	public Food CreateSoupFood() {
 		string[] soup_ingredients = {"broth", "veggies"};
 		return new Food("Soup", soup_ingredients);
 	}
 }
 
-public class foodscript : MonoBehaviour
+public class FoodListener : MonoBehaviour
 {
+
 	public GameObject player;
 
     void Start()

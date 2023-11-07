@@ -14,15 +14,11 @@ public class Food {
 		this._ingredients = ingredients;
 	}
 
-	public static Food CreateBeefFood() {
-		string[] beef_ingredients = {"beef", "potatos", "sauce"};
-		return new Food("Beef", beef_ingredients);
+	Food CreateBurger() {
+		string[] burger_ingredients = {"patty", "cheese", "bun"};
+		return new Food("Burger", burger_ingredients);
 	}
 
-	public static Food CreateSoupFood() {
-		string[] soup_ingredients = {"broth", "veggies"};
-		return new Food("Soup", soup_ingredients);
-	}
 }
 
 public class FoodListener : MonoBehaviour
@@ -39,12 +35,14 @@ public class FoodListener : MonoBehaviour
     void Update()
     {
        if (player.transform.position.x >= 3 && player.transform.position.y >= 3) { 
-			NewFood();
+			if (Input.GetKeyDown(KeyCode.E)) {
+				Debug.Log("Hello");
+			}
 
 	   }
     }
 
 	void NewFood() {
-
+		
 	}
 }

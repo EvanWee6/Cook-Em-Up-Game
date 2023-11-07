@@ -34,12 +34,7 @@ public class FoodListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if (player.transform.position.x >= 3 && player.transform.position.y >= 3) { 
-			if (Input.GetKeyDown(KeyCode.E)) {
-				Debug.Log("Hello");
-			}
 
-	   }
     }
 
 	void NewFood() {

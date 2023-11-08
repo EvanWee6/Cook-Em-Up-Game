@@ -8,8 +8,8 @@ public class SpawnFood : MonoBehaviour
 	public Vector2 maxPosition;
 	public GameObject Cheese;
 	public GameObject Patty;
-	// Start is called before the first frame update
-	void GetPosition()
+
+    Vector2 GetPosition()
 	{
         Vector2 randomPosition = new Vector2(
             Random.Range(minPosition.x, maxPosition.x),
@@ -19,8 +19,8 @@ public class SpawnFood : MonoBehaviour
 	void SpawnObject()
 	{
 		
-		GameObject cheese = Instantiate(Cheese, GetPosiiton(), Quaternion.identity);
-        GameObject patty = Instantiate(Patty, GetPosiiton(), Quaternion.identity);
+		GameObject cheese = Instantiate(Cheese, GetPosition(), Quaternion.identity);
+        GameObject patty = Instantiate(Patty, GetPosition(), Quaternion.identity);
     }
 
 	// Update is called once per frame

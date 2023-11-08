@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SpawnFood : MonoBehaviour
 {
+
+
+
 	public Vector2 minPosition;
 	public Vector2 maxPosition;
 	public GameObject Cheese;
@@ -20,17 +23,18 @@ public class SpawnFood : MonoBehaviour
 
     public void SpawnObject()
 	{
-		
-		GameObject cheese = Instantiate(Cheese, GetPosition(), Quaternion.identity);
-        GameObject patty = Instantiate(Patty, GetPosition(), Quaternion.identity);
-        GameObject bun = Instantiate(Buns, GetPosition(), Quaternion.identity);
+		Instantiate(Cheese, GetPosition(), Quaternion.identity);
+        Instantiate(Patty, GetPosition(), Quaternion.identity);
+        Instantiate(Buns, GetPosition(), Quaternion.identity);
+    }void Start()
+    {
+        SpawnObject(); 
     }
-
-	// Update is called once per frame
-	void Update()
+    // Update is called once per frame
+    void Update()
 	{
-        if (Input.GetKeyUp(KeyCode.Space))
-            SpawnObject();
+        //Debug.Log(ore.GetScore());
+
        
 
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public float move_speed = 5;
+    public float rotationSpeed = 400;
 
     float movementX;
     float movementY;
@@ -59,6 +60,12 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.A))
         {
             movementX += 1;
+        }
+        if (moveDir != Vector3.zero)
+        {
+
+            Quaternion toRotation = Quaternion.LookRotation(Vector3.forward, moveDir);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
         }
 
     }

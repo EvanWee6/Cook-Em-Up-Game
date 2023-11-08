@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnFood : MonoBehaviour
 {
     static public int score;
+    static public int BurgerCount;
 
 
     public Vector2 minPosition;
@@ -36,6 +37,7 @@ public class SpawnFood : MonoBehaviour
         //Debug.Log(ore.GetScore());
         if (score == 3)
         {
+            BurgerCount += 1;
             SpawnObject();
             score -= 3;
         }

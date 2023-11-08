@@ -25,7 +25,10 @@ public class collect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (TimerManager.GameOver == true)
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

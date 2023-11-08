@@ -10,7 +10,10 @@ public class TimerManager : MonoBehaviour
     private float _startingTime = 20f;
     public Text timerText;
     public GameOverScreen GameOverScreen;
-    public Movement Movement; 
+    public Movement Movement;
+    public SpawnFood SpawnFood;
+
+    static public bool GameOver = false;
 
 
 
@@ -33,9 +36,12 @@ public class TimerManager : MonoBehaviour
 
         if (CurrentTime <= 0)
         {
-            CurrentTime = 0; 
+            CurrentTime = 0;
+            GameOver = true;
+            SpawnFood.score = 0;
             Movement.DisablePlayerMovement();
             GameOverScreen.Setup();
+          
             
         }
     }

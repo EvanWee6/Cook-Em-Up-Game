@@ -27,8 +27,10 @@ public class PreGameTimer : MonoBehaviour
 
         if (_currentTime <= 0)
         {
-            _currentTime = 0; 
+            _currentTime = 0;
+
             SceneManager.LoadScene("Game");
+
             
         }
     }

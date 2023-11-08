@@ -8,10 +8,12 @@ public class GameOverScreen : MonoBehaviour
 {
 	public Text finalScoreText;
 
+
+
 	public void Setup()
 	{
 		gameObject.SetActive(true);
-		finalScoreText.text = "Score; " + SpawnFood.BurgerCount.ToString();
+		finalScoreText.text = "Score: " + SpawnFood.BurgerCount.ToString();
 	}
 
 	public void RestartButton()

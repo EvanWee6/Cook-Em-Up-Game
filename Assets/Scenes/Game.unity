@@ -635,6 +635,7 @@ MonoBehaviour:
   maxPosition: {x: 4, y: -4}
   Cheese: {fileID: 6173301210257018956, guid: 31a1e18525f7046eeaedcd62845ca746, type: 3}
   Patty: {fileID: 7333820378382701466, guid: 5192b23e4f24a420fb467c6199f5eb31, type: 3}
+  Buns: {fileID: 2667763833335999206, guid: bcfa97cd68b85404d8d20f6833dc98f6, type: 3}
 --- !u!4 &1411933251
 Transform:
   m_ObjectHideFlags: 0

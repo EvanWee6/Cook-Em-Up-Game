@@ -8,6 +8,7 @@ public class SpawnFood : MonoBehaviour
 	public Vector2 maxPosition;
 	public GameObject Cheese;
 	public GameObject Patty;
+    public GameObject Buns;
 
     Vector2 GetPosition()
 	{
@@ -22,6 +23,7 @@ public class SpawnFood : MonoBehaviour
 		
 		GameObject cheese = Instantiate(Cheese, GetPosition(), Quaternion.identity);
         GameObject patty = Instantiate(Patty, GetPosition(), Quaternion.identity);
+        GameObject bun = Instantiate(Buns, GetPosition(), Quaternion.identity);
     }
 
 	// Update is called once per frame

@@ -36,6 +36,7 @@ public class SpawnFood : MonoBehaviour
         SpawnObject();
 
     }
+
     // Update is called once per frame
     void Update()
 	{

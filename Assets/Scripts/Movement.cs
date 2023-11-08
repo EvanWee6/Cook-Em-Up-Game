@@ -18,8 +18,14 @@ public class Movement : MonoBehaviour
 
     }
 
+
+
     void Update()
     {
+
+
+
+
         Vector3 moveDir = new Vector3(movementX, movementY).normalized;
         transform.position += moveDir * move_speed * Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.W))

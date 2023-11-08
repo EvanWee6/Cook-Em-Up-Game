@@ -292,6 +292,7 @@ MonoBehaviour:
   minPosition: {x: -8, y: 3}
   maxPosition: {x: 8, y: -4}
   Cheese: {fileID: 6173301210257018956, guid: 31a1e18525f7046eeaedcd62845ca746, type: 3}
+  Patty: {fileID: 7333820378382701466, guid: 5192b23e4f24a420fb467c6199f5eb31, type: 3}
 --- !u!4 &1411933251
 Transform:
   m_ObjectHideFlags: 0
@@ -322,7 +323,7 @@ GameObject:
   - component: {fileID: 2090018038}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

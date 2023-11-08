@@ -16,7 +16,8 @@ public class SpawnFood : MonoBehaviour
             Random.Range(minPosition.y, maxPosition.y));
 		return randomPosition;
     }
-	void SpawnObject()
+
+    public void SpawnObject()
 	{
 		
 		GameObject cheese = Instantiate(Cheese, GetPosition(), Quaternion.identity);
@@ -26,6 +27,10 @@ public class SpawnFood : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		SpawnObject();
-	}
+        if (Input.GetKeyUp(KeyCode.Space))
+            SpawnObject();
+       
+
+
+    }
 }

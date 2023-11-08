@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SpawnFood : MonoBehaviour
 {
+    static public int score;
 
 
-
-	public Vector2 minPosition;
+    public Vector2 minPosition;
 	public Vector2 maxPosition;
 	public GameObject Cheese;
 	public GameObject Patty;
@@ -34,8 +34,12 @@ public class SpawnFood : MonoBehaviour
     void Update()
 	{
         //Debug.Log(ore.GetScore());
+        if (score == 3)
+        {
+            SpawnObject();
+            score -= 3;
+        }
 
-       
 
 
     }

@@ -15,7 +15,7 @@ public class collect : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            EventManager.score += 1;
+            SpawnFood.score += 1;
 
 
 

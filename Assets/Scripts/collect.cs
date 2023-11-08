@@ -15,10 +15,7 @@ public class collect : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            SpawnFood.score += 1;
-
-
-
+            SpawnFood.AddScore(1);
         }
     }
 

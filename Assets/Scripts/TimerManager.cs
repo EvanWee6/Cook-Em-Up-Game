@@ -38,7 +38,7 @@ public class TimerManager : MonoBehaviour
         {
             CurrentTime = 0;
             GameOver = true;
-            SpawnFood.score = 0;
+            SpawnFood.SetScore(0);
             Movement.DisablePlayerMovement();
             GameOverScreen.Setup();
           

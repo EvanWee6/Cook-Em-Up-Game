@@ -5,8 +5,20 @@ using UnityEngine.UI;
 
 public class SpawnFood : MonoBehaviour
 {
-    static public int score;
+    static private int score;
     static public int BurgerCount;
+
+	public static void AddScore(int num) {
+		score += num;
+	}
+
+	public int GetScore() {
+		return score;
+	}
+
+	public static void SetScore(int num) {
+		score = num;
+	}
 
 
     public Vector2 minPosition;
@@ -45,11 +57,7 @@ public class SpawnFood : MonoBehaviour
         {
             BurgerCount += 1;
             SpawnObject();
-            score -= 3;
+			AddScore(-3);
         }
-        
-
-    }
-
-  
+    } 
 }

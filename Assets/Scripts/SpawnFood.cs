@@ -29,6 +29,7 @@ public class SpawnFood : MonoBehaviour
         Instantiate(Buns, GetPosition(), Quaternion.identity);
     }void Start()
     {
+        BurgerCount = 0;
         SpawnObject(); 
     }
     // Update is called once per frame

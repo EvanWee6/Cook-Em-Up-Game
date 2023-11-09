@@ -8,6 +8,10 @@ public class SpawnFood : MonoBehaviour
     static private int score;
     static public int BurgerCount;
 
+    [SerializeField]
+    ParticleSystem ps;
+
+
 	public static void AddScore(int num) {
 		score += num;
 	}
@@ -58,7 +62,8 @@ public class SpawnFood : MonoBehaviour
         {
             BurgerCount += 1;
             SpawnObject();
-			AddScore(-3);
+            AddScore(-3);
+            ps.Play();
         }
     } 
 }
